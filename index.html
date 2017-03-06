@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 aling= center>CONVERTIR CELSIUS A FARHENHEIT</h1>
+    <p>
+  <label>Fahrenheit</label>
+  <input name="fahrenheit" id="inputFahrenheit" type="number"
+  oninput="converterCelsius(this.value)">
+  <button type="button" onclick="converterCelsius(); return false"> Convertir a Celsius </button>
+</p>
+<p>Celsius:<span id="outputCelsius"></span></p>
+
+<label>Celsius</label>
+<input name="celsius" id="inputCelsius" type="number"
+oninput="converterFarhe(this.value)">
+<button type="button" onclick="converterFarhe(); return false"> Convertir a Farhenheid </button>
+</p>
+<p>Celsius:<span id="outputFahrenheit"></span></p>
+
+ <script src="js/main.js" type="text/javascript"></script>
+  </body>
+</html>
