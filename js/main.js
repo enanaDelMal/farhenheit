@@ -1,9 +1,12 @@
-function converterCelsius(valNum) {
-  valNum = parseFloat(valNum);
-  document.getElementById("outputCelsius").innerHTML=(valNum-32)/1.8;
+function converterFarhe() {
+  var resultado= document.getElementById("inputCelsius").value;
+  var calculo= (resultado-32)/1.8;
+  document.getElementById("inputFahrenheit").value = parseFloat(calculo)
 }
 
-function converterFarhe(Num) {
-  valNum = parseFloat(Num);
-  document.getElementById("outputFahrenheit").innerHTML=(Num*1.8)+32;
+
+function converterCelsius() {
+  var respuesta= document.getElementById("inputFahrenheit").value;
+  var calculo2= (respuesta*1.8)+32;
+  document.getElementById("inputCelsius").value = calculo2.toFixed(2);
 }
